@@ -1,0 +1,15 @@
+## First, make sure wget is installed (i.e. brew install wget)
+
+## Then...
+
+wget \ 
+  --mirror \
+  --page-requisites \
+  --convert-links \
+  --span-hosts \
+  --domains gadetection.pbworks.com \
+  http://gadetection.pbworks.com/w/page/7930628/FrontPage
+
+### Note:
+### a) you may need to run a http-server to access the files
+### b) you may need to rename a bunch of files as .html (as http-server may serve them without the correct mime type)
